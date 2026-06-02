@@ -10,6 +10,7 @@
     </parent>
     <groupId>com.Tienda</groupId>
     <artifactId>tienda</artifactId>
+    
     <version>1</version>
     <name>tienda</name>
     <description>Proyecto Tienda</description>
@@ -102,6 +103,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>    
+        
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>9.5.0</version>
+        </dependency>
+
           
         
             
