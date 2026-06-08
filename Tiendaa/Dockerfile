@@ -20,6 +20,7 @@ WORKDIR /app
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 
+
 # Copiamos el JAR desde la etapa de compilación
 # El nombre 'app.jar' es un estándar para facilitar el despliegue
 COPY --from=build /app/target/app.jar app.jar
