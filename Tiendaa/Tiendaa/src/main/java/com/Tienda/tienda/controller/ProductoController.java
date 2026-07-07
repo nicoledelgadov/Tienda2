@@ -100,26 +100,5 @@ public class ProductoController {
 
         return "/producto/modifica";
     }
-    
-    @PostMapping("/queryAmpliada")
-             
-    public String queryAmpliada(
-            @RequestParam(value = "precioInf") Double precioInf,
-            @RequestParam(value = "precioSup") Double precioSup,
-            Model model) {
-        
-        var productos = productoService.consultaJPQL(precioInf, precioSup);
-        
-        model.addAttribute("productos", productos);
-        model.addAttribute("totalProductos", productos.size());
-        
-        var categorias = categoriaService.getCategorias(true);
-        model.addAttribute("categorias", categorias);
-       
-        model.addAttribute("precioInf", precioInf);
-        model.addAttribute("precioSup", precioSup);
-        
-        return "/producto/listado";
-    }
 
 }
