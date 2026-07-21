@@ -1,7 +1,10 @@
 package com.tienda.tienda.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank; 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Set;
 import lombok.Data;
 
@@ -16,13 +19,31 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Integer idUsuario;
+    
+    @NotBlank
+    @Column(unique = true, length = 30) 
     private String username;
-    private String password;
+    
+    @Column(length = 512)
+   private String password;
+    
+    @Column (length = 20)
     private String nombre;
+    
+    @Column (length = 30)
     private String apellidos;
+    
+    @Column (unique = true, length = 75)
     private String correo;
+    @Email
+    
+    @Column (length = 25)
     private String telefono;
+    
+    @Column (length = 1024)
     private String rutaImagen;
+    
+    
     private boolean activo;
 
     // Relación Many-to-Many con la entidad Rol
@@ -32,5 +53,5 @@ public class Usuario implements Serializable {
             joinColumns = @JoinColumn(name = "id_usuario"),
             inverseJoinColumns = @JoinColumn(name = "id_rol")
     )
-    private Set<Rol> roles;
+    private Set<Rol> roles = new HashSet<> ();
 }
