@@ -3,6 +3,7 @@
 FROM maven:3.9.6-eclipse-temurin-17-alpine AS build
 WORKDIR /app
 
+
 # Copiamos solo el pom.xml primero para aprovechar la caché de capas de Docker
 COPY pom.xml .
 RUN mvn dependency:go-offline -B
@@ -19,6 +20,7 @@ WORKDIR /app
 # Creamos un usuario de sistema para no ejecutar la app como root (Seguridad)
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
+
 
 # Copiamos el JAR desde la etapa de compilación
 # El nombre 'app.jar' es un estándar para facilitar el despliegue
