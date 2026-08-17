@@ -1,6 +1,6 @@
-package com.tienda.controller;
+package com.Tienda.controller;
 
-import com.tienda.domain.Constante;
+import com.Tienda.domain.Constante;
 import com.Tienda.service.ConstanteService;
 import jakarta.validation.Valid;
 import java.util.Locale;

@@ -1,6 +1,6 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Producto;
+import com.Tienda.domain.Producto;
 import com.Tienda.repository.ProductoRepository;
 import java.io.IOException;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.Tienda.repository;
 
-import com.tienda.domain.Constante;
+import com.Tienda.domain.Constante;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 

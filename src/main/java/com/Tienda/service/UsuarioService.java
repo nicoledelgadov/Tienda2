@@ -1,7 +1,7 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Rol;
-import com.tienda.domain.Usuario;
+import com.Tienda.domain.Rol;
+import com.Tienda.domain.Usuario;
 import com.Tienda.repository.RolRepository;
 import com.Tienda.repository.UsuarioRepository;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Factura;
+import com.Tienda.domain.Factura;
 import com.Tienda.repository.FacturaRepository;
 import java.util.NoSuchElementException;
 import org.springframework.stereotype.Service;

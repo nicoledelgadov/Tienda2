@@ -1,4 +1,4 @@
-package com.tienda.domain;
+package com.Tienda.domain;
 
 public enum EstadoFactura {
     Activa("Activa"),

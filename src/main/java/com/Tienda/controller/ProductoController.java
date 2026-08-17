@@ -1,6 +1,6 @@
-   package com.tienda.controller;
+package com.Tienda.controller;
 
-import com.tienda.domain.Producto;
+import com.Tienda.domain.Producto;
 import com.Tienda.service.CategoriaService;
 import com.Tienda.service.ProductoService;
 import jakarta.validation.Valid;

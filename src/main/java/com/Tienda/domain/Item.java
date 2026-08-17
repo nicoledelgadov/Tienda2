@@ -1,4 +1,4 @@
-package com.tienda.domain;
+package com.Tienda.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

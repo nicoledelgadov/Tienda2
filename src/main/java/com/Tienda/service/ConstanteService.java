@@ -1,6 +1,6 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Constante;
+import com.Tienda.domain.Constante;
 import com.Tienda.repository.ConstanteRepository;
 import java.util.List;
 import java.util.NoSuchElementException;

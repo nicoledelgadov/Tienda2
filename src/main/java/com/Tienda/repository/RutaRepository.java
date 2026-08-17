@@ -1,6 +1,6 @@
 package com.Tienda.repository;
 
-import com.tienda.domain.Ruta;
+import com.Tienda.domain.Ruta;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

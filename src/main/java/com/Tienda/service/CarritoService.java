@@ -1,15 +1,14 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Venta;
-import com.tienda.domain.Factura;
-import com.tienda.domain.Producto;
-import com.tienda.domain.Usuario;
-import com.tienda.domain.Item;
-import com.tienda.domain.EstadoFactura;
+import com.Tienda.domain.Venta;
+import com.Tienda.domain.Factura;
+import com.Tienda.domain.Producto;
+import com.Tienda.domain.Usuario;
+import com.Tienda.domain.Item;
+import com.Tienda.domain.EstadoFactura;
 import com.Tienda.repository.FacturaRepository;
 import com.Tienda.repository.ProductoRepository;
 import com.Tienda.repository.VentaRepository;
-
 import jakarta.servlet.http.HttpSession;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

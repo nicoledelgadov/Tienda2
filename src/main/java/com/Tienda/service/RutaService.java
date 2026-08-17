@@ -1,6 +1,6 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Ruta;
+import com.Tienda.domain.Ruta;
 import com.Tienda.repository.RutaRepository;
 import java.util.List;
 import org.springframework.stereotype.Service;

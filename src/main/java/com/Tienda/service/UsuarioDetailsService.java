@@ -1,6 +1,6 @@
 package com.Tienda.service;
 
-import com.tienda.domain.Usuario;
+import com.Tienda.domain.Usuario;
 import com.Tienda.repository.UsuarioRepository;
 import jakarta.servlet.http.HttpSession;
 import java.util.stream.Collectors;

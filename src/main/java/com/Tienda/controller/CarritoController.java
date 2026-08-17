@@ -1,8 +1,8 @@
-package com.tienda.controller;
+package com.Tienda.controller;
 
-import com.tienda.domain.Item;
-import com.tienda.domain.Factura;
-import com.tienda.domain.Usuario;
+import com.Tienda.domain.Item;
+import com.Tienda.domain.Factura;
+import com.Tienda.domain.Usuario;
 import com.Tienda.service.CarritoService;
 import com.Tienda.service.FacturaService;
 import com.Tienda.service.UsuarioService;
